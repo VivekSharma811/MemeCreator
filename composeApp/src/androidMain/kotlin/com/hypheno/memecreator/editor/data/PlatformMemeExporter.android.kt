@@ -65,7 +65,7 @@ actual class PlatformMemeExporter(
             }
 
             Result.success(file.absolutePath)
-        } catch(e: Exception) {
+        } catch (e: Exception) {
             coroutineContext.ensureActive()
             Result.failure(e)
         } finally {
@@ -107,11 +107,10 @@ actual class PlatformMemeExporter(
     }
 
     private fun drawText(canvas: Canvas, memeText: ScaledMemeText) {
-        val impactTypeface = Typeface.DEFAULT_BOLD
-//            ResourcesCompat.getFont(
-//            context,
-//            R.font.impact
-//        ) ?: Typeface.DEFAULT_BOLD
+        val impactTypeface = ResourcesCompat.getFont(
+            context,
+            R.font.impact
+        ) ?: Typeface.DEFAULT_BOLD
 
         val strokePaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
             style = Paint.Style.STROKE
