@@ -7,6 +7,17 @@ Cross-platform meme editor built with **Kotlin Multiplatform** and **Compose Mul
 - **Gallery** — Browse meme templates and pick one to edit.
 - **Editor** — Place and style text on the template, with draggable text boxes and export/share flows backed by expect/actual implementations per platform.
 
+## Demo recordings
+
+Screen recordings of the app running on real devices live in the [`demo/`](./demo) folder:
+
+| Platform | Recording | Description |
+|----------|-----------|-------------|
+| **Android** | [android_demo.mp4](./demo/android_demo.mp4) | Demo captured on an Android device. |
+| **iOS** | [ios_demo.mp4](./demo/ios_demo.mp4) | Demo captured on an iPhone (iOS device). |
+
+On GitHub, open a link to play the video in the browser; locally, open the files with any media player.
+
 ## Tech stack
 
 | Area | Choices |
